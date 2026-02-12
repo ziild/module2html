@@ -1,0 +1,112 @@
+* || Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+    line-height: 1.6;
+    background-color: #e4c9fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* || Card Styling */
+.card {
+background: #ffffff;
+padding: 50px;
+margin-bottom: 20px;
+border-radius: 8px;
+box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* || Card Styling */
+.nameheader {
+text-align: center;
+background: #ffffff;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 8px;
+box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; 
+    }
+    th, td {
+        text-align: center;
+        border: 1px, solid black;
+        padding: 8px
+    }
+    th {
+        text-align: center;
+        background-color: #a54fec;
+        color: #ffffff;
+    }
+    td {
+        text-align: center;
+        background-color: rgb(233, 185, 255);
+        color: rgb(0, 0, 0);
+    }
+
+
+form {
+display: flex;
+flex-direction: column;
+gap: 1px;
+}
+input, textarea {
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+button {
+padding: 10px;
+background-color: #e4c9fa;
+color: white;
+border: none;
+cursor: pointer;
+}
+button:hover {
+background-color: #d5a2ff;
+}
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%; /* Optional */
+}
+
+/* || Typography */
+h1 {
+text-align: center;
+margin-bottom: 10px;
+}
+h2 {
+margin-bottom: 10px;
+margin-top: 20px;
+}
+p {
+margin-bottom: 10px;
+}
+
+ul {
+margin-left: 20px;
+margin-bottom: 10px;
+}
+
+a {
+text-decoration: none;
+color: #e4c9fa;
+}
+a:hover {
+color: #005fa3;
+}

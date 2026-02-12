@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">Submit</button>
     <title>Personal Online CV</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <section>
+        <div class="container">
+        <section class="nameheader">
         <h1>Zild Jan F. Abuga-a</h1>
         <p> IT Student | Web Systems and Technologies </p>
     </header>
     <main>
-        <section>
-            <h2 style="color: #1100ff;">About Me</h2>
+        <div class="container">
+        <section class="card">
+            <h2 style="color: #d5a2ff; text-align: center;">ABOUT ME</h2>
             <img src="images/profile.jpg" alt="Profile photo">
             <p> I am a dedicated IT student specializing in Web Systems and Technologies. Passionate about creating efficient and user-friendly web applications, I strive to combine technical expertise with creative problem-solving.</p>
             <p>Email:
@@ -21,8 +24,8 @@
                 <a href="https://github.com/ziild" target="_blank">github.com/ziild</a>
             </p>
         </section>
-        <section>
-            <h2 style="color: #1100ff;">Skills</h2>
+        <section class="card">
+            <h2 style="color: #d5a2ff;">SKILLS</h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -43,41 +46,38 @@
                     </ul>
             </ul>
         </section>
-        <section>
-            <h2 style="color: #1100ff;">Education</h2>
-            <style>
-                table, th, td {border: 1px, solid, BLACK; border-collapse: collapse;}
-            </style>
-            <table>
+        <section class="card">
+            <h2 style="color: #d5a2ff;">EDUCATION</h2>
+            <table class="table">
                 <tr>
                     <th>Program</th>
                     <th>Institution</th>
                     <th>Year Graduated</th>
                 </tr>
                 <tr>
-                    <th>Elementary</th>
-                    <th>PHINMA-COC - CDO Campus</th>
-                    <th>2018</th>
+                    <td>Elementary</td>
+                    <td>PHINMA-COC - CDO Campus</td>
+                    <td>2018</td>
                 </tr>
                 <tr>
-                    <th>Junior High School</th>
-                    <th>PHINMA-COC - CDO Campus</th>
-                    <th>2022</th>
+                    <td>Junior High School</td>
+                    <td>PHINMA-COC - CDO Campus</td>
+                    <td>2022</td>
                 </tr>
                 <tr>
-                    <th>Senior High School</th>
-                    <th>PHINMA-COC - CDO Campus</th>
-                    <th>2024</th>
+                    <td>Senior High School</td>
+                    <td>PHINMA-COC - CDO Campus</td>
+                    <td>2024</td>
                 </tr>
                 <tr>
-                    <th>College</th>
-                    <th>USTP – CDO Campus</th>
-                    <th>2028</th>
+                    <td>College</td>
+                    <td>USTP – CDO Campus</td>
+                    <td>2028</td>
                 </tr>  
             </table>
         </section>
-        <section>
-            <h2 style="color: #1100ff;">Contact Me</h2>
+        <section class="card">
+            <h2 style="color: #d5a2ff;">CONTACT ME</h2>
             <form>
                 <input type="text" placeholder="Name"><br><br>
                 <input type="email" placeholder="Email"><br><br>
@@ -85,9 +85,13 @@
                 <button type="submit">Send</button>
             </form>
         </section>
+    </div>
     </main>
     <footer>
+        <div class="container">
         <p>&copy; 2026 Zild Jan F. Abuga-a All rights reserved. </p>
+        </div>
     </footer>
+</div>
 </body>
 </html>
