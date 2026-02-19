@@ -20,5 +20,6 @@ submitBtn.addEventListener("click",function(event){
     alert("Please fill in all required fields.");
     } else{
     alert("Form submitted successfully!");
+    alert("Thank you! Your message has been received.")
     }
     });
