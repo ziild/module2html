@@ -7,11 +7,9 @@ import { useState } from "react";
   
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-
   const toggleDarkMode = () => setDarkMode(prev => !prev);
-
   return (
-    <div className={darkMode ? "dark-mode" : ""}>
+    <body className={darkMode ? "dark-mode" : ""}>
       <button onClick={toggleDarkMode}>
         {darkMode ? "Toggle Light Mode" : "Toggle Dark Mode"}
       </button>
@@ -20,7 +18,7 @@ function App() {
       <Skills />
       <Education />
       <Contact />
-    </div>
+    </body>
   );
 }
 
