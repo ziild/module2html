@@ -1,4 +1,5 @@
-import profilePhoto from './assets/images/profile.jpg'; 
+import React from 'react';
+import profilePhoto from '../assets/images/profile.jpg'; // correct relative path
 
 function About() {
   return (
