@@ -15,8 +15,6 @@ function App() {
       <button onClick={toggleDarkMode}>
         {darkMode ? "Toggle Light Mode" : "Toggle Dark Mode"}
       </button>
-
-      {/* Main sections */}
       <Header />
       <About />
       <Skills />
