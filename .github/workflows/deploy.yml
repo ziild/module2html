@@ -13,9 +13,10 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: github-pages   # 👈 add this line
     defaults:
       run:
-        working-directory: personal-cv-react  # 👈 change if folder name is different
+        working-directory: personal-cv-react
 
     steps:
       - uses: actions/checkout@v4
