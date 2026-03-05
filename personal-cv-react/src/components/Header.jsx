@@ -1,12 +1,11 @@
+import Card from "./Card";
+
 function Header() {
     return (
         <div className = "container">
-        <section className="card">
-            <h1>
-                <header><strong>Zild Jan F. Abuga-a</strong></header>
-            </h1>
+        <Card title = "Zild Jan F. Abuga-a">
             <p style={{ textAlign: "center" }}>IT Student | Web Developer</p>
-        </section>
+        </Card>
         </div>
     );
 }

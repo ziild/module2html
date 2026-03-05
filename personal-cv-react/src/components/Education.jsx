@@ -1,36 +1,27 @@
-function Education() {
+import Card from "./Card";
+function Education({education}) {
     return (
-        <div className = "container">
-        <section className="card">
-            <h2>EDUCATION</h2>
-            <table class="table">
-                <tr>
-                    <th>Program</th>
-                    <th>Institution</th>
-                    <th>Year Graduated</th>
-                </tr>
-                <tr>
-                    <td>Elementary</td>
-                    <td>PHINMA-COC - CDO Campus</td>
-                    <td>2018</td>
-                </tr>
-                <tr>
-                    <td>Junior High School</td>
-                    <td>PHINMA-COC - CDO Campus</td>
-                    <td>2022</td>
-                </tr>
-                <tr>
-                    <td>Senior High School</td>
-                    <td>PHINMA-COC - CDO Campus</td>
-                    <td>2024</td>
-                </tr>
-                <tr>
-                    <td>College</td>
-                    <td>USTP – CDO Campus</td>
-                    <td>2028</td>
-                </tr>  
-            </table>
-        </section>
+        <div className="container">
+            <Card title="EDUCATION">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>Institution</th>
+                            <th>Year Graduated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {education.map((item, index) => (
+                            <tr key={index}>
+                                <td>{item.level}</td>
+                                <td>{item.school}</td>
+                                <td>{item.year}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </Card>
         </div>
     );
 }

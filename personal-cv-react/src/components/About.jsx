@@ -1,13 +1,11 @@
 import React from 'react';
-import profilePhoto from '../assets/images/profile.jpg'; // correct relative path
+import profilePhoto from '../assets/images/profile.jpg';
+import Card from "./Card";
 
 function About() {
   return (
     <div className="container">
-      <section className="card">
-        <h2 className="darktext" style={{ textAlign: "center" }}>
-          ABOUT ME
-        </h2>
+      <Card title="ABOUT ME">
         <img src={profilePhoto} alt="Profile photo" />
         <p>
           I am a dedicated IT student specializing in Web Systems and
@@ -19,17 +17,17 @@ function About() {
         <p>
           Email:
           <a href="mailto:blazezildjan123@gmail.com">
-            blazezildjan123@gmail.com
+             blazezildjan123@gmail.com
           </a>
         </p>
 
         <p>
-          GitHub:
+          GitHub: 
           <a href="https://github.com/ziild" target="_blank" rel="noopener noreferrer">
-            github.com/ziild
+             github.com/ziild
           </a>
         </p>
-      </section>
+      </Card>
     </div>
   );
 }
