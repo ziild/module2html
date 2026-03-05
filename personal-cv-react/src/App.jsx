@@ -39,7 +39,7 @@ function App() {
   ];
 
   return (
-    <body className={darkMode ? "dark-mode" : ""}>
+    <div className={darkMode ? "dark-mode" : ""}>
       <button onClick={toggleDarkMode}>
         {darkMode ? "Toggle Light Mode" : "Toggle Dark Mode"}
       </button>
@@ -48,7 +48,7 @@ function App() {
       <Skills skills={skills} />
       <Education education = {education} />
       <Contact />
-    </body>
+    </div>
   );
 }
 
