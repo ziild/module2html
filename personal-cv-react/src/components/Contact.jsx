@@ -1,5 +1,6 @@
 import Card from "./Card";
 import { useState } from "react";
+import ContactList from "./ContactList";
 
 function Contact() {
     const [name, setName] = useState("");
@@ -57,6 +58,10 @@ function Contact() {
                         Send
                     </button>
                 </form>
+            </Card>
+            
+            <Card>
+                <ContactList/> 
             </Card>
         </div>
     );
